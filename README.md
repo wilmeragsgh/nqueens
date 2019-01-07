@@ -1,7 +1,7 @@
 # N-Queens dockerized solution
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/wilmeragsgh/nqueens_dockerized/blob/master/LICENSE)
-[![Travis](https://travis-ci.org/wilmeragsgh/nqueens_dockerized.svg?branch=master)](https://travis-ci.org/wilmeragsgh/nqueens_dockerized)
+[![Build Status](https://travis-ci.com/wilmeragsgh/nqueens_dockerized.svg?branch=master)](https://travis-ci.com/wilmeragsgh/nqueens_dockerized)
 
 Dockerized solution for N-Queens problems using Explicit theorical solutions and CSP approach
 
