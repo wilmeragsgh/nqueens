@@ -17,8 +17,8 @@ services:
     app:
         build: .
         hostname: app
-        container_name: app
-        command: nqueens solver 
+        container_name: app 
+        command: sleep 1h
         volumes:
             - .:/app
         depends_on:
