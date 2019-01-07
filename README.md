@@ -8,47 +8,45 @@ This repository contains a dockerized solution for N-queens as a generalization 
 
 ## Getting started
 
+```shell
+$ git clone https://github.com/wilmeragsgh/nqueens_dockerized.git
+$ cd nqueens_dockerized
+$ docker-compose up --build -d & # To put it on the background while using it
+$ docker exec -it app bash
 ```
-git clone https://github.com/wilmeragsgh/nqueens_dockerized.git
-cd nqueens_dockerized
-docker-compose up --build -d &
 
-docker exec -it app bash
-```
-
-## Using solver
+## Example
 Current version designed for  N >= 3 to use explicit solutions
 
-```
-python setup.py
->>>N-Queens python solver! (Press Ctrl-C to exit)
->>>Please introduce the dimensions of the board: 
+```shell
+$ python setup.py
+$ N-Queens python solver! (Press Ctrl-C to exit)
+$ Please introduce the dimensions of the board: 
 4   
->>>Do you want to get on [F]irst solution or [A]ll solutions?
+$ Do you want to get on [F]irst solution or [A]ll solutions?
 F
->>>[(1, 2), (2, 4), (3, 1), (4, 3)]
-Solution has been inserted on DB
+$ [(1, 2), (2, 4), (3, 1), (4, 3)]
+$ Solution has been inserted on DB
 ```
 
 Then, next time same N will be loaded from DB
 
-```
->>>N-Queens python solver! (Press Ctrl-C to exit)
->>>Please introduce the dimensions of the board: 
+```shell
+$ N-Queens python solver! (Press Ctrl-C to exit)
+$ Please introduce the dimensions of the board: 
 4   
->>>Do you want to get on [F]irst solution or [A]ll solutions?
+$ Do you want to get on [F]irst solution or [A]ll solutions?
 F
->>>[(1, 2), (2, 4), (3, 1), (4, 3)]
-Solution has been loaded from DB
-
+$ [(1, 2), (2, 4), (3, 1), (4, 3)]
+$ Solution has been loaded from DB
 ```
 
 
 ## Testing
 Current test include check the number of solution provided for a given N in [6,12] (for demostrative purposes)
 
-```
-pytest
+```shell
+$ pytest
 ```
 
 
@@ -57,3 +55,7 @@ Further work may include finishing up matplot output on the docker side, given t
 
 ![matplot demo](https://raw.githubusercontent.com/wilmeragsgh/nqueens_dockerized/master/images/matplot_output_demo.png)
 
+
+## License
+
+N-queens is released under the [Apache License 2.0](LICENSE).
