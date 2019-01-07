@@ -1,0 +1,7 @@
+psycopg2
+sqlalchemy
+python-constraint
+mlxtend
+matplotlib
+numpy
+pytest
