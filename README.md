@@ -6,6 +6,15 @@ Dockerized solution for N-Queens problems using Explicit theorical solutions and
 
 This repository contains a dockerized solution for N-queens as a generalization of the [Eight queens problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle), using Explicit solutions(doesn't require combinatorial computation or search for the first solution) as referred by [Hoffman, E., Loessi, J., & Moore, R. (1969). Constructions for the Solution of the m Queens Problem. Mathematics Magazine, 42(2), 66-72. doi:10.2307/2689192](https://www.jstor.org/stable/2689192) and getting all solutions by using [python-constraint](https://labix.org/python-constraint) 
 
+## Features
+
+This implementation provides:
+
+* A explicit approach for getting a single solution for given N without having to search or perform combinatorial computation
+* Constrained satisfaction approach for getting all solutions for a given N if asked
+* Cache for previously asked solutions (stored on DB)
+
+
 ## Getting started
 
 ```shell
